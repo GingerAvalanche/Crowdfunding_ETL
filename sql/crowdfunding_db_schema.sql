@@ -31,17 +31,17 @@ CREATE TABLE "contacts" (
 CREATE TABLE "crowdfunding" (
     "cf_id" int   NOT NULL,
     "contact_id" int   NOT NULL,
-    "company_name" varchar(32)   NOT NULL,
-    "description" varchar(64)   NOT NULL,
+    "company_name" varchar(100)   NOT NULL,
+    "description" varchar(100)   NOT NULL,
     "goal" float   NOT NULL,
     "pledged" float   NOT NULL,
     "outcome" varchar(16)   NOT NULL,
     "backers_count" int   NOT NULL,
-    "country" varchar(2)   NOT NULL,
-    "currency" varchar(3)   NOT NULL,
+    "country" varchar(5)   NOT NULL,
+    "currency" varchar(5)   NOT NULL,
     "launch_date" date   NOT NULL,
     "end_date" date   NOT NULL,
-    "category_id" varchar(4)   NOT NULL,
+    "category_id" varchar(8)   NOT NULL,
     "subcategory_id" varchar(8)   NOT NULL,
     CONSTRAINT "pk_crowdfunding" PRIMARY KEY (
         "cf_id"
