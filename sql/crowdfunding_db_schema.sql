@@ -31,8 +31,8 @@ CREATE TABLE "contacts" (
 CREATE TABLE "crowdfunding" (
     "cf_id" int   NOT NULL,
     "contact_id" int   NOT NULL,
-    "company_name" varchar(100)   NOT NULL,
-    "description" varchar(100)   NOT NULL,
+    "company_name" varchar(33)   NOT NULL,
+    "description" varchar(64)   NOT NULL,
     "goal" float   NOT NULL,
     "pledged" float   NOT NULL,
     "outcome" varchar(16)   NOT NULL,
